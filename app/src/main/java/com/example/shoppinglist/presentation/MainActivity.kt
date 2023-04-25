@@ -15,11 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-        viewModel.shopList.observe(this){
-            Log.d("MainActivityTest", it.toString())
-            val item = it[0]
-            viewModel.deleteShopItem(item)
-        }
+
 
     }
 }

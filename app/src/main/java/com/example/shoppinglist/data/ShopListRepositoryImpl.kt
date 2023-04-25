@@ -46,7 +46,7 @@ object ShopListRepositoryImpl: ShopListRepository {
         updateList()
     }
 
-    fun updateList(){
+    private fun updateList(){
         shopListLD.value = shopList.toList()
     }
 }
