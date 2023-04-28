@@ -49,6 +49,7 @@ class ShopItemFragment : Fragment() {
         textChangedListener()
         launchRightMode()
         observeViewModel()
+
     }
 
     private fun launchRightMode() {
